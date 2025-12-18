@@ -1,0 +1,29 @@
+{
+  "seed": 42,
+  "generators": {
+    "cobot": {
+      "enabled": true,
+      "topic": "ome/cobot",
+      "interval_ms": 500,
+      "id": {
+        "uuid": "e88561dc-2401-4f9a-961c-e90e6424b1dd",
+        "asset_id": "cobot-001"
+      },
+      
+      "energy_kwh_range": [0.2, 1.5],
+      "temperature_c_range": [24.0, 38.0]
+    },
+    "shelf": {
+      "enabled": true,
+      "topic": "ome/shelf",
+      "interval_ms": 750,
+      "id": {
+        "uuid": "0030f7a2-5266-4937-9820-168409f5e9a2",
+        "asset_id": "shelf-A3"
+      },
+      "actions": ["Stored", "Picked", "Scanned"],
+      "part_count_range": [10, 60],
+      "location": "AddQualHQ/Shelf#1"
+    }
+  }
+}
