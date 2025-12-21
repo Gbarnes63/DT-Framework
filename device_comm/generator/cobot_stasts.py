@@ -48,7 +48,7 @@ config_path = os.path.join(os.path.dirname(__file__), '..', 'generator_config.js
 with open(config_path, 'r') as f:
     cfg = json.load(f)
 
-gen = CobotStatsGenerator.from_config(cfg, seed=cfg.get('seed'))
+# gen = CobotStatsGenerator.from_config(cfg, seed=cfg.get('seed'))
 
-for _ in range(10):
-    print(json.dumps(gen.sample(), indent=4))
+# for _ in range(10):
+#     print(json.dumps(gen.sample(), indent=4))
